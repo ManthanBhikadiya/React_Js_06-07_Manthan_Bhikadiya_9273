@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4ff, #eef2f7);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.card {
+  width: 340px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+}
+
+.top {
+  position: relative;
+}
+
+.top img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.center {
+  padding: 60px 26px 22px;
+  text-align: center;
+}
+
+.center h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.center p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.bottom {
+  display: flex;
+  gap: 14px;
+  padding: 20px 26px 26px;
+}
+
+.bottom button {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 30px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bottom button:first-child {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.4);
+}
+
+.bottom button:first-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.6);
+}
+
+.bottom button:last-child {
+  background: #f3f4f6;
+  color: #333;
+}
+
+.bottom button:last-child:hover {
+  background: #e5e7eb;
+  transform: translateY(-2px);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(23, 23, 23)
+  }
+
+  .card {
+    background: rgba(41, 44, 48, 0.95);
+  }
+
+  .center h1 {
+    color: #f8fafc;
+  }
+
+  .center p {
+    color: #cbd5f5;
+  }
+
+  .bottom button:last-child {
+    background: #334155;
+    color: #e5e7eb;
+  }
+
+  .bottom button:last-child:hover {
+    background: #475569;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-grid {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    padding: 24px;
+    gap: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 20px;
+  }
+}
