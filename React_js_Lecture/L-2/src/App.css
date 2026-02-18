@@ -1,0 +1,27 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texta{
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
