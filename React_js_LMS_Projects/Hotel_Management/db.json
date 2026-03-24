@@ -1,0 +1,88 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Deluxe Ocean View",
+      "type": "deluxe",
+      "price": 250,
+      "available": true,
+      "features": ["Ocean View", "King Bed", "Balcony", "WiFi", "Mini Bar"],
+      "description": "Spacious room with stunning ocean views and premium amenities"
+    },
+    {
+      "id": 2,
+      "name": "Standard Garden Room",
+      "type": "standard",
+      "price": 120,
+      "available": true,
+      "features": ["Garden View", "Queen Bed", "WiFi", "TV"],
+      "description": "Comfortable room with garden views"
+    },
+    {
+      "id": 3,
+      "name": "Executive Suite",
+      "type": "suite",
+      "price": 450,
+      "available": true,
+      "features": ["City View", "King Bed", "Living Room", "Jacuzzi", "WiFi", "Mini Bar", "Room Service"],
+      "description": "Luxurious suite with separate living area and premium services"
+    },
+    {
+      "id": 4,
+      "name": "Family Room",
+      "type": "family",
+      "price": 200,
+      "available": true,
+      "features": ["Pool View", "2 Queen Beds", "WiFi", "TV", "Kitchenette"],
+      "description": "Spacious room perfect for families"
+    },
+    {
+      "id": 5,
+      "name": "Economy Single Room",
+      "type": "standard",
+      "price": 80,
+      "available": true,
+      "features": ["City View", "Single Bed", "WiFi"],
+      "description": "Affordable room for solo travelers"
+    },
+    {
+      "id": 6,
+      "name": "Presidential Suite",
+      "type": "suite",
+      "price": 800,
+      "available": true,
+      "features": ["Panoramic View", "King Bed", "Living Room", "Jacuzzi", "Butler Service", "WiFi", "Mini Bar", "Private Pool"],
+      "description": "Ultimate luxury experience with exclusive amenities"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "roomId": 1,
+      "guestName": "John Smith",
+      "email": "john.smith@email.com",
+      "checkIn": "2026-04-01",
+      "checkOut": "2026-04-05",
+      "status": "confirmed",
+      "totalPrice": 1000
+    },
+    {
+      "id": 2,
+      "roomId": 3,
+      "guestName": "Sarah Johnson",
+      "email": "sarah.j@email.com",
+      "checkIn": "2026-04-10",
+      "checkOut": "2026-04-15",
+      "status": "confirmed",
+      "totalPrice": 2250
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@hotel.com",
+      "password": "admin123",
+      "name": "Hotel Admin"
+    }
+  ]
+}
