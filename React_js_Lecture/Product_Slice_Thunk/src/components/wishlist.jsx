@@ -56,12 +56,7 @@ const Wishlist = () => {
                                 </p>
 
                                 <div className="flex flex-col gap-2 pt-4">
-                                    <button
-                                        onClick={() => handleMoveToCart(p)}
-                                        className="w-full inline-flex justify-center items-center bg-brand hover:bg-brand-strong border border-black shadow-xs font-medium rounded-base text-sm px-4 py-2.5 transition-all"
-                                    >
-                                        Move to Cart
-                                    </button>
+                                    
 
                                     <button
                                         onClick={() => dispatch(removeFromWishlist(p.id))}
